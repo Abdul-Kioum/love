@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Smiles and Hearts</title>
+    <style>   *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      
+       
+      
+      body{
+        display: flex;
+        min-height: 80vh;
+        align-items: center;
+        justify-content: center;
+        background: rgba(255,186,215,1);
+      }
+      .all-holder{
+        width: 307px; height: 271px;
+        background: rgba(255,255,255,);
+        position: relative;
+      }
+      .emoji{
+        width: 190px;
+        height: 190px;
+        background: linear-gradient(to top, #ff8d49, #ffef83);
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -60%);
+      }
+      span{position: ; display: block;}
+
+      .eb{
+        width: 42px;
+        height: 14px;
+        background: #bb6e20;
+        border-radius: 50%;
+        position: relative;
+        transform: translate(28px, 49px) rotate(343deg);
+        z-index: 2;
+        overflow:hidde;
+      }
+      .eb:nth-of-type(2){
+        position: absolute;
+        right: 34px;
+        transform: translateY(35px)rotate(-343deg);
+      }
+      .eb:before{
+        content: '';
+        width: 37px; height: 15px;
+        background: #ffc86b;
+        position: absolute;
+        bottom: -12px;
+        border-radius: 50%;
+        left: 50%; transform: translate(-50%, -1.5px);
+        z-index: -4;
+      }
+
+      .mouth{
+        width: 60px;
+        height: 35px;
+        background: #333;
+        border-radius: 120% 120% 150px 150px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 115px);
+        overflow: hidden;
+      }
+      .mouth:before{
+        content: '';
+        width: 40px;
+        height: 30px;
+        background: #f33;
+        margin: 26px 0 0 10px;
+        position: absolute;
+        border-radius: 50%;
+      }
+
+      .eye{
+        width: 36px;
+        height: 17px;
+        background: #333;
+        border-radius: 50%;
+        position: absolute;
+        transform: translate(28px, 49px);
+        z-index: 2;
+        left: 12px;
+        top: 32px;
+
+      }
+      .eye:nth-of-type(2){
+        right: 65px;
+        left: initial;
+      }
+      .eye:before{
+        content: '';
+        width: 30px;
+        height: 17px;
+        background: #ffba63;
+        margin: 11px 0 0 3px;
+        position: absolute;
+        border-radius: 335px 335px 48px 10px;
+      }
+      
+      .h {
+    width: 50px;
+    height: 50px;
+    background: #ff;
+    text-align: center;
+    font-size: 65px;
+    position: absolute;
+    left: 30px;
+    top: 85px;
+    animation: scal 1.5s infinite ease-in var(--delay) alternate;
+}
+.h:nth-of-type(2){
+    right: 50px;
+    top: 45px;
+    left: initial;
+}
+.h:nth-of-type(3){
+    right: 60px;
+    top: 130px;;
+    left: initial;
+}
+@keyframes scal {
+    25%{
+    transform: scale(.5);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(.9);
+    }
+    
+}
+
+p{
+    position: absolute;
+    font-family:"Lucida calligraphy", cursive;
+    font-size: 20px;
+    bottom: 180px;
+    font-weight: bold;
+    text-align: center;
+}</style>
+  </head>
+  <!-- 
+  _______________________
+    
+    Only Love can save our dieing planet.
+    so, love yourself by loving others.
+                  ______________________   
+             
+
+     -- Like
+     -- comment
+   -->
+  <body>
+
+  <div class="all-holder">
+    <div class="emoji">
+      <span class="eb"></span>
+      <span class="eb"></span>
+      <span class="eb1-shadow"></span>
+
+      <div class="eye"></div>
+      <div class="eye"></div>
+      <div class="mouth"></div>
+    </div>
+
+<div class="h" style="--delay: 1s">♥️</div>
+<div class="h" style="--delay: 1.4s">♥️</div>
+<div class="h" style="--delay: 1.7s">♥️</div>
+  </div>
+<p>Where there is love, there is always <br>Smiles, Laughters and Joy
+
+</p>
+
+
+
+  </body>
+</html>
